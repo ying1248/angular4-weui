@@ -17,8 +17,11 @@ import { CoreModule } from './core/core.module';
 import { WeUIModule } from './weui'; // 'angular-weui'
 
 /* WeUI Example Module */
-import { WeUIExampleModule } from '../pages/weui/weui.example.module';
-import { WeUIExample } from '../pages/weui/weui.example';
+// import { WeUIExampleModule } from '../pages/weui/weui.example.module';
+// import { WeUIExample } from '../pages/weui/weui.example';
+
+import { WebModule } from './web/Web.module';
+import {WebComponent} from './web/web.component';
 
 
 @NgModule({
@@ -27,8 +30,8 @@ import { WeUIExample } from '../pages/weui/weui.example';
         CoreModule,
         BrowserAnimationsModule,
         WeUIModule,
-        WeUIExampleModule,
-        RouterModule.forRoot([])
+        RouterModule.forRoot([]),
+        WebModule
     ],
     declarations: [
         // AppComponent
@@ -40,7 +43,7 @@ import { WeUIExample } from '../pages/weui/weui.example';
 
     ],
     bootstrap: [
-        WeUIExample
+        WebComponent
     ]
 })
 export class AppModule { }

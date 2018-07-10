@@ -18,9 +18,9 @@ import { WeUIModule } from '../weui'; // 'angular-weui'
 import { WebComponent } from './web.component'; 
 
 /* Web Module Component */
-import {HomeComponent} from './home/home.component';
-import {DetailComponent} from './home/detail/detail.component';
-import {ListComponent} from './list/list.component';
+import {HomeComponent} from './component/home/home.component';
+import {DetailComponent} from './component/home/detail/detail.component';
+import {ListComponent} from './component/list/list.component';
 
 
 const routes: Routes = [
